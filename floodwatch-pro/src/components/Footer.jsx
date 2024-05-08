@@ -4,7 +4,6 @@ import {
     FooterContainer,
     Row,
     Column,
-    FooterLink,
     Heading,
 } from "./FooterStyles";
 
@@ -20,12 +19,8 @@ const Footer =() =>{
                     </Column>
                     <Column>
                         <Heading>Emergency Floods Websites</Heading>
-                            <FooterLink>
-                                Red Cross
-                            </FooterLink>
-                            <FooterLink>
-                                ReliefWeb
-                            </FooterLink>
+                            <h4>Red Cross</h4>
+                            <h4>ReliefWeb</h4>
                     </Column>
                     <Column>
                         <Heading>Emergency Floods E-mails</Heading>
