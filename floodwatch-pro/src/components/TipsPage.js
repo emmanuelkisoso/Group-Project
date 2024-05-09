@@ -53,7 +53,7 @@ const Tips = () => {
                                 <ul>
                                     <li><b>Inspect Your Home:</b> Check for structural damage before entering, and beware of hazards like loose wires or gas leaks.</li>
                                     <li><b>Dispose of Contaminated Items:</b> Throw away food, cosmetics, and medicines that may have come into contact with floodwaters.</li>
-                                    <li><b>Inspect Your Home:</b> Check for structural damage before entering, and beware of hazards like loose wires or gas leaks.</li>
+                                    <li><b>Seek Support:</b>Reach out for support from family, friends, or counseling services if you're feeling overwhelmed.</li>
                                     <li><b>Clean and Disinfect:</b> Thoroughly clean and disinfect all surfaces that came into contact with floodwater.</li>
                                     <li><b>Dry Out Your Home:</b> Open windows, doors, and use fans to help dry out your home and prevent mold growth.</li>
                                     <li><b>Restore Utilities Safely:</b> Have professionals inspect and restore gas, electricity, and water services.</li>
