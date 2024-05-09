@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  position: relative; /* Container relative to the page content */
+  min-height: 100vh; /* Ensures the container takes up at least the viewport height */
+`;
+
 export const Box = styled.div`
     padding: 1.5% 2.5%;
     background: lightblue;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    heig
-    left: 0;
-    right: 0;
+    // bottom: 0;
+    // width: 100%;
+    // margin: 0 auto;
+    // position: fixed;
+    // left: 0;
+    // right: 0;
 
-    @media (max-width: 1000px) {
-        padding: 1.5% 2.5%; /* Adjust padding for smaller screens */
-    }
+    // @media (max-width: 1000px) {
+    //     padding: 1.5% 2.5%; /* Adjust padding for smaller screens */
+    // }
 `
 
 export const FooterContainer = styled.div`

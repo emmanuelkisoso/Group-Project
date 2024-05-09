@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
 
 //Homepage component
 function Home() {
@@ -23,8 +26,9 @@ function Home() {
   simulateCasualtyIncrease();
 
   return (
+    <>
+    <NavBar />
     <div className="container">
-      <h1>Flood Watch</h1>
       <div className="row">
         <div className="col-6 border w-25">
           <div className="col-10 border border-danger mx-auto">
@@ -72,6 +76,8 @@ function Home() {
         </div>
       </div>
     </div>
+    <Footer />
+  </>
   );
 }
 
