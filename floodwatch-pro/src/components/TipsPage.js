@@ -3,13 +3,13 @@ import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardText, Butt
 
 const Tips = () => {
     return (
-        <Container className="my-5">
-            <div className="bg-primary text-white p-3 mb-4 text-center">
+        <Container fluid className="my-5 bg-secondary">
+            <div className="bg-dark text-white p-3 mb-4 text-center">
                 <h2>Tips for Dealing with Floods</h2>
             </div>
             <Row>
                 <Col md="4">
-                    <Card className="h-100 shadow rounded">
+                    <Card className="h-100 shadow rounded bg-dark text-white">
                         <CardImg top src="https://i.pinimg.com/564x/ee/01/7c/ee017c280affb8adf90527978c5fd35c.jpg" alt="Before Flood" />
                         <CardBody>
                             <CardTitle tag="h4">Before a Flood</CardTitle>
@@ -27,7 +27,7 @@ const Tips = () => {
                     </Card>
                 </Col>
                 <Col md="4">
-                    <Card className="h-100 shadow rounded">
+                    <Card className="h-100 shadow rounded bg-dark text-white">
                         <CardImg top src="https://i.pinimg.com/564x/4a/af/26/4aaf260fd5ced2a80d25c8d8d8f2cfb0.jpg" alt="During Flood" />
                         <CardBody>
                             <CardTitle tag="h4">During Flood</CardTitle>
@@ -45,7 +45,7 @@ const Tips = () => {
                     </Card>
                 </Col>
                 <Col md="4">
-                    <Card className='h-100 shadow rounded'>
+                    <Card className='h-100 shadow rounded bg-dark text-white'>
                         <CardImg top src='https://i.pinimg.com/564x/96/64/36/9664361253b3b99a7ff27a5e3ebc5c88.jpg' alt='After Flood'></CardImg>
                         <CardBody>
                             <CardTitle tag='h4'>After a Flood</CardTitle>
@@ -65,7 +65,7 @@ const Tips = () => {
             </Row>
             <Row className="mt-4">
                 <Col md="12">
-                    <Card className='h-100 shadoooow rounded text-center'>
+                    <Card className='h-100 shadoooow rounded text-center bg-dark text-white'>
                         <CardBody>
                             <CardTitle tag="h4">Additional Resources</CardTitle>
                             <CardText>
@@ -75,7 +75,7 @@ const Tips = () => {
                                 <br />
                                 - Emergency Services: 911
                             </CardText>
-                            <Button color='primary' href='https://www.ready.gov/floods' target="_blank">Learn More About Floods</Button>
+                            <Button color='info' href='https://www.ready.gov/floods' target="_blank">Learn More About Floods</Button>
                         </CardBody>
                     </Card>
                 </Col>
