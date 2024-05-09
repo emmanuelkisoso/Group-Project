@@ -1,11 +1,21 @@
-import "./App.css";
+import './App.css';
 import Home from "./Home";
+import Footer from './components/Footer';
+// import { Routes,Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">{/* NavBar */}</header>
-      <Home />
+    <div>
+      <div style={{minHeight: "400px",}}>
+      <NavBar />
+        {/* <Routes>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/' element={ <Tips /> } />
+        </Routes> */}
+       <Home />
+      </div>
+      <Footer />
     </div>
   );
 }
