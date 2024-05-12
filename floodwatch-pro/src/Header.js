@@ -2,8 +2,9 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Header({ item }) {
+function Header({ item, onHandleSearch }) {
   const [activeItem, setActiveItem] = useState(item);
+  const [search, setSearch] = useState("");
 
   return (
     <div className="header">
@@ -15,8 +16,17 @@ function Header({ item }) {
         FloodWatch
       </Link>
       <div className="search">
-        <input type="text" placeholder="Search" name="search" />
-        <button>Search</button>
+        <input
+          type="text"
+          placeholder="Search"
+          className={activeItem === "about" ? "d-none" : ""}
+          name="search"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+            onHandleSearch(search);
+          }}
+        />
       </div>
       <div className="menuItems">
         <Link
@@ -27,7 +37,7 @@ function Header({ item }) {
           About
         </Link>
         <Link
-          to="/"
+          to="/report"
           className={`custom-link ${activeItem === "report" ? "active" : ""}`}
           onClick={() => setActiveItem("report")}
         >
