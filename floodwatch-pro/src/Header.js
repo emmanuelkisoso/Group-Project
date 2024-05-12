@@ -2,8 +2,8 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function Header() {
-  const [activeItem, setActiveItem] = useState("home");
+function Header({ item }) {
+  const [activeItem, setActiveItem] = useState(item);
 
   return (
     <div className="header">

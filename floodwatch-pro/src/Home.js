@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import floodGif from "./images/flooded-house.png";
+import Header from "./Header";
+import Footer from "./Footer";
 
 //Homepage component
 function Home() {
   const [stats, setStats] = useState([]);
-  let [initNumber, setInitNumber] = useState(10);
+  // let [initNumber, setInitNumber] = useState(10);
+  const [activeItem, setActiveItem] = useState("home");
 
   //fetch data from db.json
   useEffect(() => {
@@ -37,25 +40,9 @@ function Home() {
 
   return (
     <>
-      <div className="header">
-        <div className="search">
-          <input type="text" placeholder="Search" name="search" />
-          <button>Search</button>
-        </div>
-        <div className="menuItems">
-          <Link to="/stats" className="custom-link">
-            About
-          </Link>
-          <Link to="/about" className="custom-link">
-            Report
-          </Link>
-          <Link to="/contact" className="custom-link">
-            Safety Tips
-          </Link>
-          {/* <div className="animation start-home"></div> */}
-        </div>
-      </div>
-      <div className="floodItemsBox ">
+      <Header item="home" />
+
+      <div className="floodItemsBox">
         {stats.map((stat) => {
           return (
             <div
@@ -88,6 +75,7 @@ function Home() {
           );
         })}
       </div>
+      <Footer />
     </>
   );
 }
