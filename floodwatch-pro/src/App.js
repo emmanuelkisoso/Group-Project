@@ -1,12 +1,7 @@
-import React from 'react'
-import Tips from './components/TipsPage';
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Tips />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
