@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -38,6 +40,12 @@ body {
     letter-spacing: 0.1em;
     padding-bottom: 1rem;
   }
+}
+
+.active {
+  letter-spacing: 0.1em;
+  padding-bottom: 1rem;
+  color: rgb(255, 74, 74);
 }
 
 .animation {
@@ -217,4 +225,115 @@ h3 {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+p,
+li {
+  color: antiquewhite;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+  line-height: 2rem;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: rgb(255, 74, 74);
+
+  margin-top: 5rem;
+  animation: slideIn 500ms ease forwards;
+}
+
+p {
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.aboutFloodWatch {
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.aboutLi {
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h5 {
+  color: rgb(255, 74, 74);
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  border-top: 1px dashed antiquewhite;
+}
+
+label {
+  color: antiquewhite;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+.payPal {
+  color: antiquewhite;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+i {
+  color: antiquewhite;
+}
+
+.donations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  text-align: center;
+  color: grey;
+}
+
+.lugrasimo-regular {
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.outerMap {
+  max-width: 100%;
+  overflow: hidden;
+  color: red;
+  /* width: 400px; */
+  height: 300px;
+}
+
+.innerMap {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+#gmap-canvas {
+  max-width: none;
+  background: none;
 }
