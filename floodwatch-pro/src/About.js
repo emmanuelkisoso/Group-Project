@@ -19,8 +19,10 @@ function About() {
       body: JSON.stringify(donation),
     })
       .then((res) => res.json())
-      .then((data) => data);
+      .then((data) => handleDonorAmount(data));
   }
+
+  function handleDonorAmount(data) {}
 
   return (
     <>
@@ -92,6 +94,14 @@ function About() {
           <button type="submit">Donate</button>
         </form>
         <div className="payPal">Total donations: {}</div>
+      </div>
+      <div className="outerMap">
+        <div id="gmap-canvas" className="innerMap">
+          <iframe
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=Nairobi+parklands&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
       </div>
 
       <Footer />
