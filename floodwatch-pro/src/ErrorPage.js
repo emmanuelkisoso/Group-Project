@@ -8,7 +8,7 @@ export default function ErrorPage() {
 
   return (
     <>
-      <Header />
+      <Header item="error" />
       <main>
         <h1>Whoops! Something went wrong!</h1>
         <p className="text-center fs-3 m-5">

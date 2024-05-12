@@ -9,14 +9,17 @@ import Footer from "./Footer";
 //Homepage component
 function Home() {
   const [stats, setStats] = useState([]);
-  // let [initNumber, setInitNumber] = useState(10);
-  const [activeItem, setActiveItem] = useState("home");
+  const [data, setData] = useState(stats);
 
   //fetch data from db.json
   useEffect(() => {
     fetch("http://localhost:3000/floodstats")
       .then((r) => r.json())
-      .then((data) => setStats(data))
+      .then((data) => {
+        console.log(data);
+        setStats(data);
+        setData(data);
+      })
       .catch((error) => alert(error.message));
   }, []);
 
@@ -34,30 +37,36 @@ function Home() {
   const hiddenItems = document.querySelectorAll(".hidden");
   hiddenItems.forEach((el) => observer.observe(el));
 
-  //handle routing to another page using Link
-  // function handleClick(id) {
-  //   <Link to={`/${id}`}></Link>;
-  // }
+  function handleSearch(value) {
+    // if (!value) {
+    setData(stats);
+    // }
+    // if (stats.length !== 0) {
+    let result = stats.filter((item) =>
+      item.location.toLowerCase().includes(value.toLowerCase())
+    );
+    setData(result);
+    console.log(data);
+    // }
+  }
+
+  console.log(data);
 
   return (
     <>
-      <Header item="home" />
+      <Header item="home" onHandleSearch={handleSearch} />
 
       <div className="floodItemsBox">
-        {stats.map((stat) => {
+        {data.map((stat, index) => {
           return (
             <div
-              key={stat.id}
+              key={index}
               className="flexItems"
               // style={{ border: "5px solid white" }}
             >
               <div style={{ width: "100%" }}>
                 <Link to={`/${stat.id}}`}>
-                  <img
-                    src={stat.pictureUrl}
-                    alt="pic"
-                    // onClick={() => handleClick(stat.id)}
-                  />
+                  <img src={stat.pictureUrl} alt="pic" />
                 </Link>
               </div>
 
