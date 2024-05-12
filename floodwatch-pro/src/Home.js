@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./Home.css";
+import floodGif from "./images/flooded-house.png";
 
 //Homepage component
 function Home() {
@@ -14,65 +16,79 @@ function Home() {
       .catch((error) => alert(error.message));
   }, []);
 
-  // Function to simulate slowly increasing casualty count
-  const simulateCasualtyIncrease = () => {
-    setInterval(() => {
-      setInitNumber(initNumber + 2);
-    }, 10000); // Random delay between 10 to 20 minutes
-  };
-  simulateCasualtyIncrease();
+  //text animation set up
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+
+  const hiddenItems = document.querySelectorAll(".hidden");
+  hiddenItems.forEach((el) => observer.observe(el));
+
+  //handle routing to another page using Link
+  // function handleClick(id) {
+  //   <Link to={`/${id}`}></Link>;
+  // }
 
   return (
-    <div className="container">
-      <h1>Flood Watch</h1>
-      <div className="row">
-        <div className="col-6 border w-25">
-          <div className="col-10 border border-danger mx-auto">
-            <h5 className="">Casualty count</h5>
-            Number of displaced people:
-            {initNumber}
-          </div>
+    <>
+      <div className="header">
+        <div className="search">
+          <input type="text" placeholder="Search" name="search" />
+          <button>Search</button>
         </div>
-        <div className="col-6">
-          <div className="row border border-danger">
-            {stats.map((stat) => {
-              return (
-                <div
-                  className="card col-3 m-3"
-                  key={stat.id}
-                  // style={{ width: "18rem" }}
-                >
-                  <h5 className="card-title badge text-bg-dark m-2">
-                    {stat.continent}
-                  </h5>
-                  <Link to={`/${stat.id}`}>
-                    <img
-                      src={stat.pictureUrl}
-                      className="card-img-top"
-                      alt="pic"
-                    />{" "}
-                  </Link>
-                  <div className="card-body">
-                    <h5>{stat.location}</h5>
-
-                    {stat.alertLevel === "red" ? (
-                      <span class="badge rounded-pill text-bg-danger float-end mb-0">
-                        severe
-                      </span>
-                    ) : (
-                      <span class="badge rounded-pill text-bg-warning float-end mb-0">
-                        moderate
-                      </span>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="menuItems">
+          <Link to="/stats" className="custom-link">
+            About
+          </Link>
+          <Link to="/about" className="custom-link">
+            Report
+          </Link>
+          <Link to="/contact" className="custom-link">
+            Safety Tips
+          </Link>
+          {/* <div className="animation start-home"></div> */}
         </div>
       </div>
-    </div>
+      <div className="floodItemsBox ">
+        {stats.map((stat) => {
+          return (
+            <div
+              key={stat.id}
+              className="flexItems"
+              // style={{ border: "5px solid white" }}
+            >
+              <div style={{ width: "100%" }}>
+                <Link to={`/${stat.id}}`}>
+                  <img
+                    src={stat.pictureUrl}
+                    alt="pic"
+                    // onClick={() => handleClick(stat.id)}
+                  />
+                </Link>
+              </div>
+
+              <div className="content hidden">
+                <h3>{stat.location}</h3>
+
+                <div className="alert hidden">
+                  <img
+                    src={stat.alertLevel === "red" ? floodGif : ""}
+                    alt="pic"
+                    style={{ width: "30px" }}
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
-
 export default Home;
