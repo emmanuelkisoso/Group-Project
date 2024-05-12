@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.menuItems {
+  /* border: 1px solid red; */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: 600;
+  border-right: 1px solid white;
+  padding-right: 1rem;
+  &:hover {
+    animation: menuTextHover 0.3s forwards ease-out;
+  }
+}
+
+/* animation for menu text*/
+
+@keyframes menuTextHover {
+  from {
+    letter-spacing: 0;
+    padding-bottom: 0;
+  }
+  to {
+    letter-spacing: 0.1em;
+    padding-bottom: 1rem;
+  }
+}
+
+.animation {
+  position: absolute;
+  padding: 0.8rem;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  background-color: red;
+  width: 80px;
+}
+
+.floodItemsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.flexItems {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+
+.flexItems img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: absolute;
+  color: blanchedalmond;
+  top: 4rem;
+  margin-left: 2rem;
+}
+
+.alert {
+  /* border: 1px solid black; */
+  margin-top: 6rem;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  /* border: 1px dotted red; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: antiquewhite;
+  height: 70px;
+  width: 70rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+input {
+  border-radius: 10px;
+  width: 32rem;
+  padding: 5px;
+  background-color: transparent;
+  color: antiquewhite;
+  &:hover {
+    border: 1px solid antiquewhite;
+  }
+}
+
+button {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+  &:hover {
+    background-color: antiquewhite;
+    color: black;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-5%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.alert {
+  transition: all 1.2s;
+  /* transform: translateX(0);
+  transform: translateY(-50%); */
+  transition-delay: 1s;
+}
+
+.flexItems {
+  animation: fade linear;
+  animation-timeline: view();
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    width: 50%;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    width: 100%;
+  }
+  /* 100% {
+    opacity: 1;
+  } */
+}
+
+h3 {
+  animation: slideIn 500ms ease forwards;
+}
+
+@keyframes fontAnim {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 80px;
+  }
+  0% {
+    font-size: 10px;
+  }
+
+  50% {
+    font-size: 80px;
+  }
+  /* 100% {
+      opacity: 1;
+    } */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
