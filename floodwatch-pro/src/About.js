@@ -1,15 +1,26 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import "./Home.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function About() {
   const [amount, setAmount] = useState(10);
+  let [total, setTotal] = useState(0);
 
+  useEffect(() => {
+    fetch("http://localhost:3000/donations")
+      .then((res) => res.json())
+      .then((data) => {
+        let totAmount = data.reduce((acc, item) => {
+          return acc + item.amount;
+        }, 0);
+        setTotal(totAmount);
+      });
+  }, []);
   function handleDonations(e) {
     e.preventDefault();
     const donation = {
-      amount: amount,
+      amount: parseInt(amount),
     };
     fetch("http://localhost:3000/donations", {
       method: "POST",
@@ -22,7 +33,11 @@ function About() {
       .then((data) => handleDonorAmount(data));
   }
 
-  function handleDonorAmount(data) {}
+  function handleDonorAmount(data) {
+    total += data.amount;
+    setTotal(total);
+    alert("Thank you for your donation!");
+  }
 
   return (
     <>
@@ -93,7 +108,7 @@ function About() {
           />
           <button type="submit">Donate</button>
         </form>
-        <div className="payPal">Total donations: {}</div>
+        <div className="payPal">Total donations: {total}</div>
       </div>
       <div className="outerMap">
         <div id="gmap-canvas" className="innerMap">
