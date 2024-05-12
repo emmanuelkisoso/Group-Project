@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import FloodReportForm from "./FloodReportForm";
 
 
 //Homepage component
@@ -28,7 +25,6 @@ function Home() {
 
   return (
     <>
-    <NavBar />
     <div className="container">
       <div className="row">
         <div className="col-6 border w-25">
@@ -77,8 +73,6 @@ function Home() {
         </div>
       </div>
     </div>
-    <Footer />
-    <FloodReportForm />
   </>
   );
 }
