@@ -65,7 +65,7 @@ const Tips = () => {
             </Row>
             <Row className="mt-4">
                 <Col md="12">
-                    <Card className='h-100 shadoooow rounded text-center bg-dark text-white'>
+                    <Card className='h-100 shadow rounded text-center bg-dark text-white'>
                         <CardBody>
                             <CardTitle tag="h4">Additional Resources</CardTitle>
                             <CardText>
