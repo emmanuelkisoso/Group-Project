@@ -14,10 +14,10 @@ const routes = [
 
   //     element: <IanTips />,
   //   },
-  //   {
-  //     path: "/:id",
-  //     element: <MichelleDetails />,
-  //   },
+  // {
+  //   path: "/:id",
+  //   element: <MichelleDetails />,
+  // },
 ];
 
 export default routes;
