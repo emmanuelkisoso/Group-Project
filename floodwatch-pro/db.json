@@ -483,5 +483,11 @@
       "reportBy": "Uruguayan National Emergency System",
       "pictureUrl": "https://media.istockphoto.com/id/1225349990/photo/aerial-pov-view-depiction-of-flooding-devastation-wrought-after-massive-natural-disasters.jpg?s=612x612&w=0&k=20&c=dk94nP6RbPwn49VEnOSElPopZTFQbbfDqIpm9coQqVc="
     }
+  ],
+  "donations": [
+    {
+      "id": "83a1",
+      "amount": 10
+    }
   ]
 }
