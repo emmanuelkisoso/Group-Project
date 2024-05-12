@@ -36,7 +36,7 @@ const FloodDetails = () => {
             </div>
             <div className="col-md-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div className="card-body">
-                <h1 className="text-center mb-4" style={{ color: 'red' }}>Flood Details</h1>
+                <h1 className="text-center mb-4">Flood Details</h1>
                 <h5 className="card-title">{floodData.location}</h5>
                 <p className="card-text">{floodData.description}</p>
                 <ul className="list-group list-group-flush">
