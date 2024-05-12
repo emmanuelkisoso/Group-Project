@@ -1,17 +1,7 @@
-import './App.css';
-import Home from "./Home";
-// import Footer from './components/Footer';
-// import { Routes,Route } from 'react-router-dom';
-// import NavBar from './components/NavBar';
+import "./App.css";
 
 function App() {
-  return (
-    <div>
-      {/* <NavBar /> */}
-      <Home />
-      {/* <Footer /> */}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
