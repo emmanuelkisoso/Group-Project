@@ -19,7 +19,7 @@ function Header({ item, onHandleSearch }) {
         <input
           type="text"
           placeholder="Search"
-          className={activeItem === "about" ? "d-none" : ""}
+          className={activeItem === "about"  || activeItem === "report" || activeItem === "tips" || activeItem === "details" ? "d-none" : ""}
           name="search"
           value={search}
           onChange={(e) => {

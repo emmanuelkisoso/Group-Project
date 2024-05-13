@@ -29,7 +29,7 @@ const FloodDetails = () => {
 
   return (
     <>
-    <Header />
+    <Header item="details"/>
     <div className="container-fluid" style={{ backgroundColor: 'black', color: '#f5f5f5', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {floodData ? (
         <div className="card h-100" style={{ maxWidth: '960px', width: '100%', backgroundColor: '#808080' }}>

@@ -40,7 +40,7 @@ const FloodReportForm = () => {
 
   return (
     <>
-      <Header />
+      <Header item="report"/>
       <div className="flood-report-form-container">
         {formSubmitted ? (
           <div className="submission-message">

@@ -5,7 +5,7 @@ import Header from '../Header';
 const Tips = () => {
     return (
         <>
-            <Header />
+            <Header item="tips"/>
             <Container fluid className="my-5 bg-secondary">
                 <div className="bg-dark text-white p-3 mb-4 text-center">
                     <h2>Tips for Dealing with Floods</h2>
