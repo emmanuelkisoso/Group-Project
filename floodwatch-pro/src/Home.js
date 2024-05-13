@@ -13,7 +13,7 @@ function Home() {
 
   //fetch data from db.json
   useEffect(() => {
-    fetch("http://localhost:3000/floodstats")
+    fetch("https://deployment-groupproject.onrender.com/floodstats")
       .then((r) => r.json())
       .then((data) => {
         console.log(data);

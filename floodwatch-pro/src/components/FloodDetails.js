@@ -9,7 +9,7 @@ const FloodDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/floodstats');
+        const response = await fetch('https://deployment-groupproject.onrender.com/floodstats');
         if (response.ok) {
           const data = await response.json();
           const floodEntry = data.find((item) => item.id === id);

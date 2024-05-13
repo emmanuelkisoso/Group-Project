@@ -1,7 +1,7 @@
 {
   "floodstats": [
     {
-      "id": 24,
+      "id": "24",
       "latitude": 5.5533,
       "longitude": -0.1969,
       "alertLevel": "orange",
@@ -22,7 +22,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1304021910/photo/aerial-view-overhead-flooded-houses-after-a-cyclone-and-rain.jpg?s=612x612&w=0&k=20&c=Xs9cYkEQ-CZ7YDQ94loOpMl5w1AuMqEGCy3UrhS3uCE="
     },
     {
-      "id": 25,
+      "id": "25",
       "latitude": -1.2921,
       "longitude": 36.8219,
       "alertLevel": "red",
@@ -43,7 +43,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1318174364/photo/heavy-rains-and-floods-strike-nairobi-residents.jpg?s=612x612&w=0&k=20&c=KwOid16Puy_HRHem90yuf4FekW8IMvnbNgq6VmnLbKs="
     },
     {
-      "id": 26,
+      "id": "26",
       "latitude": -4.0435,
       "longitude": 39.6682,
       "alertLevel": "orange",
@@ -64,7 +64,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/145188445/photo/vehicle-stuck-in-a-flood.jpg?s=612x612&w=0&k=20&c=CxpOUibQ0IgLCx-WlAsOoqS17UXLsxuWLdSCgekxRxo="
     },
     {
-      "id": 27,
+      "id": "27",
       "latitude": 9.082,
       "longitude": 8.6753,
       "alertLevel": "red",
@@ -85,7 +85,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/459025033/photo/flooded-road.jpg?s=612x612&w=0&k=20&c=QCcVpmvEZUgXccriNnMSMg96vMdrn15I7SzPMf7ctcQ="
     },
     {
-      "id": 28,
+      "id": "28",
       "latitude": 15.3229,
       "longitude": 38.9251,
       "alertLevel": "orange",
@@ -106,7 +106,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1304022575/photo/damaged-and-flooded-houses-after-cyclone.jpg?s=612x612&w=0&k=20&c=leS2MFt-RbA1CHLOQDylafki5akN_KMm-9dAq8ScbKw="
     },
     {
-      "id": 29,
+      "id": "29",
       "latitude": 13.4549,
       "longitude": 25.2352,
       "alertLevel": "red",
@@ -127,7 +127,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1145007532/photo/flooded-river.jpg?s=612x612&w=0&k=20&c=PajmCXmUZ_kN3H7OORB1eW1FaS0UqtWaQhcCGNAD6qs="
     },
     {
-      "id": 30,
+      "id": "30",
       "latitude": 3.3947,
       "longitude": 29.8824,
       "alertLevel": "orange",
@@ -148,7 +148,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/537273645/photo/car-accident-drowned.jpg?s=612x612&w=0&k=20&c=-IHRmvcTh55N99MJYkloJ0py1SgbXWauNK3IPmuFbCw="
     },
     {
-      "id": 31,
+      "id": "31",
       "latitude": -17.8252,
       "longitude": 31.0335,
       "alertLevel": "red",
@@ -169,7 +169,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1403987813/photo/brown-flood-waters.jpg?s=612x612&w=0&k=20&c=WcZ58NfMKk0iShz1gMPCmkm8YxQe4HWpIvi1StNTCEM="
     },
     {
-      "id": 32,
+      "id": "32",
       "latitude": -25.746,
       "longitude": 28.1881,
       "alertLevel": "orange",
@@ -190,7 +190,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1297738941/photo/car-submerged-in-a-deep-sinkhole-that-emerged-in-a-busy-city-street-in-durban-south-africa.jpg?s=612x612&w=0&k=20&c=85i68wU5-EBklB56BlRgPl9Xr63Uld-e36pA3duWwgk="
     },
     {
-      "id": 33,
+      "id": "33",
       "latitude": -12.0464,
       "longitude": -77.0428,
       "alertLevel": "red",
@@ -211,7 +211,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1220241730/photo/flooded-area-due-to-rains-in-salvador.jpg?s=612x612&w=0&k=20&c=1_qEbJOm4zmVG_npFOfitpJvRKSYXGN5_A9oHSMiF9g="
     },
     {
-      "id": 34,
+      "id": "34",
       "latitude": 4.7109,
       "longitude": -74.0721,
       "alertLevel": "orange",
@@ -232,7 +232,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1299826765/photo/wooden-houses-in-flood-of-rio-negro-in-sunny-summer-day-manaus-amazonas-brazil-concept-of.jpg?s=612x612&w=0&k=20&c=LhSi1r2vAu7O2KqCjH399ADxmvqd4a8kL5N8PCH-JSI="
     },
     {
-      "id": 35,
+      "id": "35",
       "latitude": -34.6037,
       "longitude": -58.3816,
       "alertLevel": "red",
@@ -253,7 +253,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1313550908/photo/flooding-caused-by-rain.jpg?s=612x612&w=0&k=20&c=gqMi2MkjDlA9NPdV86zILE21XhzIX-T9gtfz9p3WAO0="
     },
     {
-      "id": 36,
+      "id": "36",
       "latitude": -16.4897,
       "longitude": -68.1193,
       "alertLevel": "orange",
@@ -274,7 +274,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1218186208/photo/aguas-calientes-ancient-inca-city-ruin-spring-flood.jpg?s=612x612&w=0&k=20&c=bs02M30qnMKhB3K671k7t9iBT3YXo2Sn6dWjRTvGVTw="
     },
     {
-      "id": 31,
+      "id": "31",
       "latitude": -17.8252,
       "longitude": 31.0335,
       "alertLevel": "red",
@@ -295,7 +295,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1472397119/photo/severe-floods-in-the-city-of-sao-paulo-it-rained-heavily-causing-flooding-in-the-streets.jpg?s=612x612&w=0&k=20&c=W8B8qf1MIp9-PRkl4V-p5dhQPF70P2ubrw1JXVBPDeI="
     },
     {
-      "id": 32,
+      "id": "32",
       "latitude": -25.746,
       "longitude": 28.1881,
       "alertLevel": "orange",
@@ -316,7 +316,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1216283484/photo/cloud-formation-in-salvador.jpg?s=612x612&w=0&k=20&c=_zkoQOMHXX1llfmhmwonL7_oLMwC-zf8Q062VMJqwdo="
     },
     {
-      "id": 33,
+      "id": "33",
       "latitude": -12.0464,
       "longitude": -77.0428,
       "alertLevel": "red",
@@ -337,7 +337,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1358848330/photo/flood-with-rainwater.jpg?s=612x612&w=0&k=20&c=wt-8wGba0-oHXzAWNcIN32LwhrUDDi4FUDBmEdTvWzs="
     },
     {
-      "id": 34,
+      "id": "34",
       "latitude": -34.6037,
       "longitude": -58.3816,
       "alertLevel": "orange",
@@ -358,7 +358,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1370994650/photo/mud-after-rain-on-the-road-and-city-streets-natural-disaster.jpg?s=612x612&w=0&k=20&c=Nt4yZZe9FfoMFj_0pY7Nit645y9fV8NgDypyC4mG-PM="
     },
     {
-      "id": 35,
+      "id": "35",
       "latitude": -15.7801,
       "longitude": -47.9292,
       "alertLevel": "red",
@@ -379,7 +379,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/509422300/photo/rain-flooding-salvador.jpg?s=612x612&w=0&k=20&c=zrUEXjRH0uGn9CIdykbQAfNsi5TY2g0DpwARXst2h4Y="
     },
     {
-      "id": 36,
+      "id": "36",
       "latitude": -0.1807,
       "longitude": -78.4678,
       "alertLevel": "orange",
@@ -400,7 +400,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1282387405/photo/hurricane-delta-causes-damage-to-louisianas-gulf-coast.jpg?s=612x612&w=0&k=20&c=rXdBZaYDfe_AOdF4OR2UyUgSnab82RQooR_HHFepcck="
     },
     {
-      "id": 37,
+      "id": "37",
       "latitude": -12.0464,
       "longitude": -77.0428,
       "alertLevel": "red",
@@ -421,7 +421,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/184878691/photo/flood.jpg?s=612x612&w=0&k=20&c=XZBt_PNGbHYnmjSKG1v2XErij0dj8o6YxZZzXS71dGA="
     },
     {
-      "id": 38,
+      "id": "38",
       "latitude": 4.7109,
       "longitude": -74.0721,
       "alertLevel": "orange",
@@ -442,7 +442,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/852285320/photo/water-crashing-over-bridge-during-hurricane.jpg?s=612x612&w=0&k=20&c=_UVq3TkywgdiISQf4bcCVsyK15PkVQn3Wx_eXMw2hv4="
     },
     {
-      "id": 39,
+      "id": "39",
       "latitude": -33.4489,
       "longitude": -70.6693,
       "alertLevel": "red",
@@ -463,7 +463,7 @@
       "pictureUrl": "https://media.istockphoto.com/id/1057751720/photo/aerial-drone-view-entire-neighborhood-under-water-near-austin-texas.jpg?s=612x612&w=0&k=20&c=NxujqgdqBijYtsKpRBJ-Cj_TYeIrwvFoQIhV8dt91ko="
     },
     {
-      "id": 40,
+      "id": "40",
       "latitude": -34.9011,
       "longitude": -56.1645,
       "alertLevel": "orange",

@@ -8,7 +8,7 @@ function About() {
   let [total, setTotal] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:3000/donations")
+    fetch("https://deployment-groupproject.onrender.com/donations")
       .then((res) => res.json())
       .then((data) => {
         let totAmount = data.reduce((acc, item) => {
@@ -22,7 +22,7 @@ function About() {
     const donation = {
       amount: parseInt(amount),
     };
-    fetch("http://localhost:3000/donations", {
+    fetch("https://deployment-groupproject.onrender.com/donations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
