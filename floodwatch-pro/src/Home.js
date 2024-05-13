@@ -65,7 +65,7 @@ function Home() {
               // style={{ border: "5px solid white" }}
             >
               <div style={{ width: "100%" }}>
-                <Link to={`/${stat.id}}`}>
+                <Link to={`/${stat.id}`}>
                   <img src={stat.pictureUrl} alt="pic" />
                 </Link>
               </div>

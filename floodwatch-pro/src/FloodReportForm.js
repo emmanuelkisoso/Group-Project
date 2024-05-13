@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FloodReportForm.css'
 import Header from './Header';
+import Footer from './Footer';
 
 const FloodReportForm = () => {
   const [formData, setFormData] = useState({
@@ -130,6 +131,7 @@ const FloodReportForm = () => {
           </form>
         )}
       </div>
+      <Footer />
     </>
   );
 };
