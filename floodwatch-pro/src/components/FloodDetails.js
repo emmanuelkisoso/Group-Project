@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './FloodDetails.css';
 import { useParams } from 'react-router-dom';
+import Footer from '../Footer';
+import Header from '../Header';
+
 
 const FloodDetails = () => {
   const [floodData, setFloodData] = useState(null);
@@ -12,7 +15,7 @@ const FloodDetails = () => {
         const response = await fetch('https://deployment-groupproject.onrender.com/floodstats');
         if (response.ok) {
           const data = await response.json();
-          const floodEntry = data.find((item) => item.id === id);
+          const floodEntry = data.find((item) => item.id === parseInt(id));
           setFloodData(floodEntry);
         } else {
           console.error('Failed to fetch data');
@@ -25,6 +28,8 @@ const FloodDetails = () => {
   }, [id]);
 
   return (
+    <>
+    <Header />
     <div className="container-fluid" style={{ backgroundColor: 'black', color: '#f5f5f5', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {floodData ? (
         <div className="card h-100" style={{ maxWidth: '960px', width: '100%', backgroundColor: '#808080' }}>
@@ -36,7 +41,7 @@ const FloodDetails = () => {
             </div>
             <div className="col-md-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div className="card-body">
-                <h1 className="text-center mb-4">Flood Details</h1>
+                <h1 className="text-center mb-4 text-dark">Flood Details</h1>
                 <h5 className="card-title">{floodData.location}</h5>
                 <p className="card-text">{floodData.description}</p>
                 <ul className="list-group list-group-flush">
@@ -94,6 +99,8 @@ const FloodDetails = () => {
         <p onClick={() => setFloodData(floodData)}>Loading...</p>
       )}
     </div>
+    <Footer />
+    </>
   );
 };
 
