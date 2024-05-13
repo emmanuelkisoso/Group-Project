@@ -5,7 +5,7 @@ MichelleInnovates@github.com
 emmanuelkisoso@github.com
 Pulse-Programmer@github.com
 Kamausizzlah@github.com
-JafarMaalim@github.com
+jahfaro@github.com
 
 
 The app uses the fetch and post methods to retrieve and submit data. The data includes information about the location, severity, water level, casualties, and damage level of areas affected by floods. The app also includes a donation count and a form for reporting flood details. Additionally, the app has a tips page that provides safety measures during floods.
